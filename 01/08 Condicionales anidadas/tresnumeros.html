@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>tres numeros</title>
+</head>
+<body>
+  <script type="text/javascript">
+  var numero1 = parseInt(prompt('Ingresa el primer número',''));
+  var numero2 = parseInt(prompt('Ingresa el segundo número',''));
+  var numero3 = parseInt(prompt('Ingresa el tercer número',''));
+
+  if(numero1>numero2){
+    if(numero2>numero3){
+      document.write('El numero '+numero1+' es el mayor y es el que ingresaste primero');
+    }
+  }else{
+    if(numero2>numero3){
+      document.write('El número '+numero2+' es el mayor y es el segundo que ingresaste');
+    } else{
+    document.write('El número '+numero3+' es el mayor y es el ultimo que ingresaste');
+    }
+  }
+  </script>
+</body>
+</html>
