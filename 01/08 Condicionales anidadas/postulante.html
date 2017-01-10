@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Postulante</title>
+</head>
+<body>
+  <script type="text/javascript">
+  var nombre = prompt('Ingrese el nombre del postulante');
+  var totalDePreguntas = parseInt(prompt('Ingrese el total de preguntas realizadas al postulante',''));
+  var preguntasCorrectas = parseInt(prompt('Ingrese el número de respuestas correctas'));
+
+  var porcentaje = parseInt((preguntasCorrectas*100)/totalDePreguntas);
+
+  if(porcentaje >= 90){
+    document.write('El postulante '+nombre+' obtuvo un total de respuestas correctas del '+porcentaje+'%. Es de Nivel Superior');
+  }else{
+    if(porcentaje < 90){
+      if(porcentaje >= 75){
+        document.write('El postulante '+nombre+' obtuvo un total de respuestas correctas del '+porcentaje+'%. Es de Nivel Medio');
+      }else{
+        if(porcentaje < 75){
+          if(porcentaje >= 50){
+            document.write('El postulante '+nombre+' obtuvo un total de respuestas correctas del '+porcentaje+'%. Es de Nivel Regular');
+          }else{
+            document.write('El postulante '+nombre+' obtuvo un total de respuestas correctas de menos del 50%. Esta fuera de nivel');
+          }
+         }
+       }
+     }
+  }
+  </script>
+</body>
+</html>
