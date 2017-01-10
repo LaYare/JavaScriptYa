@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>nueve</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var numero = 0;
+        var suma = 0;
+
+
+        do {
+            suma = suma + numero;
+            numero = parseInt(prompt('Ingrese el número'));
+        } while (numero != 9999);
+
+        if (suma < 0) {
+            document.write('El número ' + suma + ' es menor que cero');
+        } else {
+            if (suma > 0) {
+                document.write('El número ' + suma + ' es mayor a cero');
+            } else {
+                document.write('El número ' + suma + ' es igual a cero');
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Censo</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    var edad = 0;
+    var sexo = 0;
+    var mujeres = 0;
+    var hombres = 0;
+    var documento;
+    var suma = 0;
+    var total = 0;
+
+    do {
+      edad = prompt('Ingrese la edad');
+      sexo = prompt('Ingrese el sexo (femenino o masculino)');
+      documento = parseInt(prompt('Ingrese el número del documento'));
+
+      switch (sexo) {
+        case 'femenino':
+          mujeres++;
+          break;
+        case 'masculino':
+          hombres++;
+          break;
+      }
+      if (sexo == 'masculino' && edad > 16 && edad <= 65) {
+        suma++;
+      }
+      total++
+    } while (documento != 0);
+
+    document.write('El total de personas censadas es: ' + total + '<br>');
+    document.write('El total de mujeres censadas es: ' + mujeres + '<br>');
+    document.write('El total de hombres censados es: ' + hombres + '<br>');
+    document.write('El total de hombres de entre 16 y 65 años de edad censados es: ' + suma + '<br>');
+  </script>
+</body>
+
+</html>

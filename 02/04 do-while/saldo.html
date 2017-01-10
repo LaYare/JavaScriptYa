@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>saldo</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    var cuenta = 0;
+    var nombre = 0;
+    var saldo = 0;
+    var suma = 0;
+
+    do {
+      nombre = prompt('Ingrese el nombre del cliente');
+      saldo = parseInt(prompt('Ingrese el saldo'));
+      cuenta = parseInt(prompt('Ingrese el número de cuenta'));
+      if (saldo > 0) {
+        document.write('Nombre del cliente: ' + nombre + '. Número de cuenta: ' + cuenta + '. Saldo: ' + saldo + ' El cliente es acreedor. <br>');
+      } else {
+        if (saldo < 0) {
+          document.write('Nombre del cliente: ' + nombre + '. Número de cuenta: ' + cuenta + '. Saldo: ' + saldo + ' El cliente es deudor.<br>');
+        } else {
+          document.write('Nombre del cliente: ' + nombre + '. Número de cuenta: ' + cuenta + '. Saldo: ' + saldo + ' El cliente tiene un saldo nulo.<br>');
+        }
+      }
+      suma = suma + saldo;
+    } while (cuenta > 0);
+
+    document.write('El saldo total es de: $' + suma);
+  </script>
+</body>
+
+</html>
