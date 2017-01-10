@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+  var x = 1;
+  var sieteOMas = 0;
+  var seisOMenos = 0;
+
+while(x<=10){
+  var calificacion = parseInt(prompt('ingrese la calificación calificación',''));
+  if(calificacion >= 7){
+
+    sieteOMas++;
+  }else{
+
+    seisOMenos++;
+  }
+  x = x + 1;
+}
+document.write('Los alumnos con calificación de 7 o más son: '+sieteOMas+'<br>');
+document.write('Los alumnos con calificación menor de 7 son: '+seisOMenos);
+  </script>
+</body>
+</html>
