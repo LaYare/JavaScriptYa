@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>listas</title>
+</head>
+<body>
+  <script type="text/javascript">
+  var lista1 = 0;
+  var suma1 = 0;
+  var lista2 = 0;
+  var suma2 = 0;
+  var x = 1;
+  var y = 1;
+
+  while(x <= 3){
+    lista1 = parseInt(prompt('Ingresa el número de la primera lista'));
+    suma1 = suma1 + lista1;
+    x++
+  }
+
+  while(y <= 3){
+    lista2 = parseInt(prompt('Ingresa el número de la segunda lista'));
+    suma2 = suma2 + lista2;
+    y++
+  }
+
+  if(suma1 > suma2){
+    document.write('La lista 1 es mayor');
+  }else{
+    if(suma2 > suma1){
+      document.write('La lista 2 es mayor');
+    } else{
+      document.write('Las dos listas son iguales');
+    }
+  }
+  </script>
+</body>
+</html>

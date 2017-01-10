@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>sueldos</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var x = 1;
+    var sueldo = 0;
+    var sueldoTotal = 0;
+    var menosTrescientos = 0;
+    var masTrescientos = 0;
+
+    while(x<=5){
+      sueldo = parseInt(prompt('Ingrese el sueldo',''));
+      if(sueldo >= 100 && sueldo <= 300){
+        menosTrescientos++;
+      }else{
+        masTrescientos++;
+      }
+      sueldoTotal = sueldoTotal + sueldo;
+      x = x+1;
+    }
+    document.write(menosTrescientos+' empleados ganan menos de $300 <br>');
+    document.write(masTrescientos+' empleados ganan más de $300 <br>');
+    document.write('La empresa gasta $'+sueldoTotal+' pesos en insumos para el pago de sueldos');
+  </script>
+</body>
+</html>
