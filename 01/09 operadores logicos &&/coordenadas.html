@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Coordenadas</title>
+</head>
+<body>
+  <script type="text/javascript">
+  var x = parseInt(prompt('Ingresa la coordenada X',''));
+  var y = parseInt(prompt('Ingresa la coordenada Y',''));
+
+  if(x > 0 && y > 0){
+    document.write('El punto se ubica en el primer cuadrante');
+  }else{
+    if(x < 0 && y > 0){
+      document.write('El punto se ubica en el segundo cuadrante');
+    } else{
+      if(x < 0 && y < 0){
+        document.write('El punto se ubica en el tercer cuadrante');
+      }else{
+        if(x > 0 && y < 0){
+          document.write('El punto se ubica en el cuarto cuadrante');
+        }else{
+          document.write('Eso no es una coordenada');
+        }
+      }
+    }
+  }
+  </script>
+</body>
+</html>

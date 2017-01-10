@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sueldo</title>
+</head>
+<body>
+  <script type="text/javascript">
+  var sueldo = parseInt(prompt('Ingrese el sueldo'));
+  var antiguedad = parseInt(prompt('Ingrese los años de antiguedad'));
+
+  if(sueldo < 500 && antiguedad >= 10){
+    var aumento20 = parseInt(((sueldo/100)*20)+sueldo);
+    document.write('El sueldo del trabajador aumenta 20% y es: $'+aumento20);
+  }else{
+    if(sueldo < 500 && antiguedad < 10){
+      var aumento5 = parseInt(((sueldo/100)*5)+sueldo);
+      document.write('El sueldo del trabajador aumenta 5% y es: $'+aumento5);
+    }else{
+      document.write('El sueldo del trabajador no cambia y es: $'+sueldo);
+    }
+  }
+  </script>
+</body>
+</html>
