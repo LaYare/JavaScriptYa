@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>El mayor de los tres</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function elMayor(uno, dos, tres) {
+
+      if (uno > dos && dos > tres) {
+        return 'El mayor es: ' + uno;
+      } else {
+        if (dos > uno && uno > tres) {
+          return 'El mayor es: ' + dos;
+        } else {
+          if (uno > dos && uno > tres) {
+            return 'El mayor es: ' + uno;
+          } else {
+            return 'El mayor es: ' + tres;
+          }
+        }
+      }
+    }
+
+    var mayor = elMayor(3, 1, 2);
+
+    document.write(mayor);
+  </script>
+</body>
+
+</html>

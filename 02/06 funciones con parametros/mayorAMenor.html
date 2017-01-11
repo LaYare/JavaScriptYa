@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>mayor a menor</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function elMenorDeLosEnteros(x1, x2, x3) {
+      if (x1 < x2 && x2 < x3) {
+        document.write(x1 + ', ' + x2 + ', ' + x3);
+      } else {
+        if (x2 < x1 && x1 < x3) {
+          document.write(x2 + ', ' + x1 + ', ' + x3);
+        } else {
+          document.write(x3 + ', ' + x2 + ', ' + x1);
+        }
+      }
+    }
+
+    var entero1 = parseInt(prompt('Ingresa el primer entero'));
+    var entero2 = parseInt(prompt('Ingresa el segundo entero'));
+    var entero3 = parseInt(prompt('Ingresa el tercer entero'));
+
+    elMenorDeLosEnteros(entero1, entero2, entero3);
+  </script>
+</body>
+
+</html>
