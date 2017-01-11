@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>coordenadas</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    var p = parseInt(prompt('Ingresa el total de números a procesar', ''));
+    var x = 0;
+    var y = 0;
+    var plano1 = 0;
+    var plano2 = 0;
+    var plano3 = 0;
+    var plano4 = 0;
+
+    for (var i = 1; i <= p; i++) {
+      x = parseInt(prompt('Ingrese la coordenada x', ''));
+      y = parseInt(prompt('Ingrese la coordenada y', ''));
+
+      if (x > 0 && y > 0) {
+        document.write('El punto ' + i + ' se encuentra en el primer cuadrante <br>');
+        plano1++
+      } else {
+        if (x < 0 && y > 0) {
+          document.write('El punto ' + i + ' se encuentra en el segundo cuadrante <br>');
+          plano2++
+        } else {
+          if (x < 0 && y < 0) {
+            document.write('El punto ' + i + ' se encuentra en el tercer cuadrante <br>');
+            plano3++
+          } else {
+            document.write('El punto ' + i + ' se encuentra en el cuarto cuadrante <br>');
+            plano4++
+          }
+        }
+      }
+    }
+
+    document.write(plano1 + ' puntos están en el primer plano. <br>');
+    document.write(plano2 + ' puntos están en el segundo plano. <br>');
+    document.write(plano3 + ' puntos están en el tercer plano. <br>');
+    document.write(plano4 + ' puntos están en el cuarto plano. <br>');
+  </script>
+</body>
+
+</html>

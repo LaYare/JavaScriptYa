@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>promedios</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    var mañana = 0;
+    var tarde = 0;
+    var noche = 0;
+    var promedioM = 0;
+    var promedioT = 0;
+    var promedioN = 0;
+    var prom1 = 0;
+    var prom2 = 0;
+    var prom3 = 0;
+
+    for (var m = 1; m <= 5; m++) {
+      mañana = parseInt(prompt('Ingrese la edad de los alumnos de la mañana', ''));
+      promedioM = promedioM + mañana;
+      prom1 = parseInt(promedioM / m);
+    }
+
+    for (var t = 1; t <= 6; t++) {
+      tarde = parseInt(prompt('Ingrese la edad de los alumnos de la tarde', ''));
+      promedioT = promedioT + tarde;
+      prom2 = parseInt(promedioT / t);
+
+    }
+
+    for (var n = 1; n <= 11; n++) {
+      noche = parseInt(prompt('Ingrese la edad de los alumnos de la noche', ''));
+      promedioN = promedioN + noche;
+      prom3 = parseInt(promedioN / n);
+
+    }
+
+    if (prom1 > prom2 && prom1 > prom2) {
+      document.write('El turno con un mayor promedio de edad es el de la mañana <br>');
+    } else {
+      if (prom2 > prom1 && prom2 > prom3) {
+        document.write('El turno con un mayor promedio de edad es el de la tarde <br>');
+      } else {
+        document.write('El turno con un mayor promedio de edad es el de la noche <br>');
+      }
+    }
+    document.write('El promedio de edades del turno de la mañana es: ' + prom1 + '<br>');
+    document.write('El promedio de edades del turno de la tarde es: ' + prom2 + '<br>');
+    document.write('El promedio de edades del turno de la noche es: ' + prom3 + '<br>');
+  </script>
+</body>
+
+</html>
