@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>triangulo</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    var base = 0;
+    var altura = 0;
+    var area = 0;
+    var mayor = 0;
+
+    for (var i = 1; i <= 3; i++) {
+      base = parseInt(prompt('Ingresa la base del triangulo', ''));
+      altura = parseInt(prompt('Ingresa la altura del triangulo', ''));
+      area = (base * altura) / 2;
+      document.write('La base del triangulo es: ' + base + '. La altura del triangulo es: ' + altura + '. El area del triangulo es: ' + area + '. <br>');
+
+      if (area > 12) {
+        mayor++
+      }
+    }
+    document.write('El total de triangulos con area mayor a 12 son: ' + mayor);
+  </script>
+</body>
+
+</html>
