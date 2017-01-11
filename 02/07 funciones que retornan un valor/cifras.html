@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>cifras</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function cantidadDeDigitos(cantidad) {
+      if (cantidad < 10) {
+        return 'La cantidad tiene una cifras';
+      } else {
+        if (cantidad < 100) {
+          return 'La cantidad tiene dos cifras';
+        } else {
+          if (cantidad < 1000) {
+            return 'La cantidad tiene tres cifras';
+          } else {
+            if (cantidad < 99999) {
+              return 'La cantidad tiene cuatro cifras';
+            }
+          }
+        }
+      }
+    }
+
+    var cant = cantidadDeDigitos(9000);
+    document.write(cant);
+  </script>
+</body>
+
+</html>
