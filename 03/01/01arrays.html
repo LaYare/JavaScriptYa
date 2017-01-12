@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>primer array</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function total(vector) {
+      for (var i = 0; i < vector.length; i++) {
+        var x = prompt('Ingrese el número', '');
+        vector[i] = parseInt(x);
+      }
+    }
+
+    function suma(vector) {
+      var sumaTotal = 0;
+      for (var a = 0; a < vector.length; a++) {
+        sumaTotal = sumaTotal + vector[a];
+      }
+      document.write('La suma total es: ' + sumaTotal + '<br>');
+
+      var sumaMayor36 = 0;
+      var mayor50 = 0;
+      for (var b = 0; b < vector.length; b++) {
+        if (vector[b] > 36) {
+          sumaMayor36 = sumaMayor36 + vector[b];
+        }
+        if (vector[b] > 50) {
+          mayor50++;
+        }
+      }
+      document.write('El acumulado de los números mayores a 36 es: ' + sumaMayor36 + '<br>');
+      document.write(mayor50 + ' números son mayores de 50');
+    }
+
+    var vector = new Array(8);
+    total(vector);
+    suma(vector);
+  </script>
+</body>
+
+</html>

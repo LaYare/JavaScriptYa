@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Arrays 02</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function llenado(vector01, vector02) {
+      for (var i = 0; i < vector01.length; i++) {
+        var x = parseInt(prompt('Ingrese el valor para el primer vector'));
+        vector01[i] = x;
+      }
+
+      for (var f = 0; f < vector02.length; f++) {
+        var y = parseInt(prompt('Ingrese el valor para el segundo vector'));
+        vector02[f] = y;
+      }
+      document.write('El primer vector tiene los dígitos: ' + vector01);
+      document.write('<br> El segundo vector tiene los dígitos: ' + vector02);
+    }
+
+    function suma(vector01, vector02, vectorSuma) {
+      var resultado = 0;
+      for (var i = 0; i < vector01.length; i++) {
+        resultado = resultado + (vector01[i] + vector02[i]);
+        vectorSuma[i] = vector01[i] + vector02[i];
+      }
+      document.write('<br> Los dígitos que contiene el tercer vector son: ' + vectorSuma);
+      document.write('<br> El resultado de la suma de dichos dígitos es: ' + resultado);
+    }
+
+    var vector01 = new Array(4);
+    var vector02 = new Array(4);
+    var vectorSuma = new Array(4);
+    llenado(vector01, vector02);
+    suma(vector01, vector02, vectorSuma);
+  </script>
+</body>
+
+</html>
