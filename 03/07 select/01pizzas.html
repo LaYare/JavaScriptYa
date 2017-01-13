@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Seleccion de menus</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function menus() {
+      var pizzas = document.getElementById('menu');
+      document.getElementById('pizza').value = pizzas.options[pizzas.selectedIndex].text;
+      document.getElementById('precio').value = pizzas.options[pizzas.selectedIndex].value;
+    }
+  </script>
+
+  <form>
+    <select id="menu" onChange="menus()">
+    <option value="$220.00">Jamón y queso</option>
+    <option value="$320.00">Muzzarella</option>
+    <option value="$420.00">Morrones</option>
+  <select>
+  <br>
+  La pizza: <input type="text" id="pizza">
+  cuesta: <input type="text" id="precio">
+</form>
+</body>
+</html>

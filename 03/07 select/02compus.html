@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function procesador() {
+      var proces = document.getElementById('pro');
+      document.getElementById('modeloP').value = proces.options[proces.selectedIndex].text;
+      document.getElementById('precioP').value = proces.options[proces.selectedIndex].value;
+
+      var mon = document.getElementById('moni');
+      document.getElementById('modeloM').value = mon.options[mon.selectedIndex].text;
+      document.getElementById('precioM').value = mon.options[mon.selectedIndex].value;
+
+      var disc = document.getElementById('dd');
+      document.getElementById('capacidad').value = disc.options[disc.selectedIndex].text;
+      document.getElementById('precioDD').value = disc.options[disc.selectedIndex].value;
+    }
+
+
+    function totales() {
+      var a = parseInt(document.getElementById('precioP').value);
+      var b = parseInt(document.getElementById('precioM').value);
+      var c = parseInt(document.getElementById('precioDD').value);
+
+      var suma = 0;
+
+      suma = a + b + c;
+
+      document.getElementById('total').value = suma;
+
+    }
+  </script>
+
+  <form>
+    <select id="pro" onChange="procesador()">
+    <option value="400">Intel I3</option>
+    <option value="500">Intel I5</option>
+    <option value="800">Intel I7</option>
+  <select>
+  Procesador: <input type="text" id="modeloP">
+  Precio: <input type="text" id="precioP">
+  <br><br>
+
+  <select id="moni" onChange="procesador()">
+    <option value="250">Samsung 20'</option>
+    <option value="350">Samsung 22'</option>
+    <option value="550">Samsung 26'</option>
+  <select>
+  Monitor: <input type="text" id="modeloM">
+  Precio: <input type="text" id="precioM">
+  <br><br>
+
+  <select id="dd" onChange="procesador()">
+    <option value="300">500 GB</option>
+    <option value="440">1 TB</option>
+    <option value="500">3 TB</option>
+  <select>
+  Capacidad: <input type="text" id="capacidad">
+  Precio: <input type="text" id="precioDD">
+  <br><br>
+  <input type="button" value="calcular" id="suma" onClick="totales()">
+  Presupuesto : <input type="text" id="total">
+</form>
+</body>
+</html>

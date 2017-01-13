@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>cantidad de pizzas</title>
+</head>
+
+<body>
+  <script>
+    var pizza = document.getElementById('pizzas').value;
+    var cantidadP = parseInt(document.getElementById('cantidad').value);
+    var suma = 0;
+    suma = pizza * cantidadP;
+    document.getElementById('total').value = suma;
+    }
+  </script>
+  <form>
+    <select id="pizzas">
+<option value="4">Queso</option>
+<option value="6">Jamón y queso</option>
+<option value="10">Especial</option>
+</select>
+    <input type="text" id="cantidad" placeholder="ingresa la cantidad de pizzas">
+    <br>
+    <input type="button" value="comprar" onClick="presupuesto()"> El total a pagar por las pizzas es: <input type="text" id="total">
+  </form>
+</body>
+
+</html>
