@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>potencia</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function cubo() {
+      var numero = document.getElementById('numero').value;
+      var potencia = Math.pow(numero, 3);
+      alert('El número elevado al cubo es: ' + potencia);
+    }
+  </script>
+
+  <form>
+    Ingrese el número que quiere elevar:<br>
+    <input type="text" id="numero">
+    <br>
+    <input type="button" onClick="cubo()" value="Elevar">
+  </form>
+</body>
+
+</html>

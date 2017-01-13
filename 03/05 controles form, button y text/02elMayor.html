@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>El mayor de los dos</title>
+</head>
+
+<body>
+  <script>
+    function compara() {
+      var numero01 = document.getElementById('numero01').value;
+      var numero02 = document.getElementById('numero02').value;
+      if (numero01 > numero02) {
+        alert('El número mayor es: ' + numero01);
+      } else {
+        alert('El número mayor es: ' + numero02);
+      }
+    }
+  </script>
+
+  <form>
+    Ingrese el primer número:<br>
+    <input type="text" id="numero01">
+    <br> Ingrese el segundo número:<br>
+    <input type="text" id="numero02">
+    <br>
+    <input type="button" onClick="compara()" value="comparar">
+  </form>
+</body>
+
+</html>
