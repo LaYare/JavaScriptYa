@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    var palabra = prompt('Ingrese la palabra', '');
+    var cont = 0;
+    for (var i = 0; i < palabra.length; i++) {
+      if (palabra.charAt(i) == palabra.charAt(palabra.length - 1 - i)) {
+        cont++;
+      }
+    }
+
+    if (cont == palabra.length) {
+      document.write('es un palíndromo');
+    } else {
+      document.write('no es un palíndromo');
+    }
+  </script>
+</body>
+
+</html>

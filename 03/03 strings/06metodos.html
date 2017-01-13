@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Metodos</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    var palabra = prompt('Ingrese una palabra');
+    var mitad = palabra.substring(0, palabra.length / 2);
+    var ultimo = palabra.charAt(palabra.length - 1);
+
+    function inverso(palabra) {
+      document.write('<br>Inversa: ' + ' ');
+      for (var i = -1; i < palabra.length; i++) {
+        document.write(palabra.charAt(palabra.length - i - 1));
+      }
+    }
+
+    function guion(palabra) {
+      document.write('<br>La palabra separada por un guión: ');
+      for (var i = 0; i < palabra.length; i++) {
+        document.write(palabra.charAt(i) + '-');
+      }
+
+    }
+
+    function vocal(palabra) {
+      var vocal = 0;
+
+      for (var i = 0; i < palabra.length; i++) {
+        if (palabra.charAt(i) == 'a' || palabra.charAt(i) == 'e' || palabra.charAt(i) == 'i' || palabra.charAt(i) == 'o' || palabra.charAt(i) == 'u' || palabra.charAt(i) == 'A' || palabra.charAt(i) == 'E' || palabra.charAt(i) == 'I' || palabra.charAt(
+            i) == 'O' || palabra.charAt(i) == 'U') {
+          vocal++
+        }
+      }
+      document.write('<br>La palabra tiene ' + vocal + ' vocales');
+    }
+
+    document.write('La mitad de la palabra es: ' + mitad);
+    document.write('<br>El último carácter de la palabra es: ' + ultimo);
+    inverso(palabra);
+    guion(palabra);
+    vocal(palabra);
+  </script>
+</body>
+
+</html>

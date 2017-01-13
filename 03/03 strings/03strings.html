@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>buscar una subcadena</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    var texto = prompt('Ingrese el texto en donde quiere buscar', '');
+    var palabra = prompt('Ingrese la palabra que quiere buscar', '');
+    var buscar = texto.indexOf(palabra);
+
+    if (buscar != -1) {
+      document.write('La palabra ' + palabra + ' está dentro del texto y su posición es: ' + buscar);
+    } else {
+      document.write('La palabra no está dentro del texto');
+    }
+  </script>
+</body>
+
+</html>
