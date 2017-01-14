@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>datos</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function ingreso() {
+      var nom = document.getElementById("nombre").value;
+      var cor = document.getElementById("correo").value;
+      var text = document.getElementById("area").value;
+
+      alert('Su nombre es: ' + nom + ' su correo es: ' + cor + ' sus comentarios son: ' + text);
+    }
+  </script>
+  <form>
+    Ingresa tu nombre: <input type="text" id="nombre"><br> Ingresa tu correo: <input type="text" id="correo"><br> Aquí puedes hacer tus comentarios:<br>
+    <textarea id="area" rows="10" cols="50"></textarea><br>
+    <input type="button" value="Ingresar" onClick="ingreso()">
+  </form>
+</body>
+
+</html>

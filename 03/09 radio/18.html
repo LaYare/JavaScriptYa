@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>18</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function acceso() {
+      var s = document.getElementById('si').checked;
+      if (s == true) {
+        alert('puede acceder al sitio');
+      } else {
+        alert('aún no puedes acceder, Jesus te esta mirando ¡PECADOR!');
+      }
+    }
+  </script>
+  <form>
+    Tienes 18 años o más<br>
+    <input type="radio" id="si" name="edad">Si <br>
+    <input type="radio" name="edad">No<br>
+    <input type="button" onClick="acceso()" value="confirmar">
+  </form>
+</body>
+
+</html>
