@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Deportes</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function mostrar() {
+      var check1 = document.getElementById('uno').checked;
+      var check2 = document.getElementById('dos').checked;
+      var check3 = document.getElementById('tres').checked;
+
+      if (check1 == true && check2 == true && check3 == true) {
+        alert('Usted seleccionó: Fútbol, Básket y Tenis');
+      } else {
+        if (check1 == true && check2 == true) {
+          alert('Usted seleccionó: Fútbol y Básket');
+        } else {
+          if (check1 == true && check3 == true) {
+            alert('Usted seleccionó: Fútbol y Tenis');
+          } else {
+            if (check2 == true && check3 == true) {
+              alert('Usted seleccionó: Básket y Tenis');
+            } else {
+              if (check1 == true && check2 == false && check3 == false) {
+                alert('Usted seleccionó: Fútbol');
+              } else {
+                if (check1 == false && check2 == true && check3 == false) {
+                  alert('Usted seleccionó: Básket');
+                } else {
+                  if (check1 == false && check2 == false && check3 == true) {
+                    alert('Usted seleccionó: Tenis');
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <form>
+    <input type="checkbox" id="uno"> Fútbol <br>
+    <input type="checkbox" id="dos"> Básket <br>
+    <input type="checkbox" id="tres"> Tenis <br>
+    <input type="button" onClick="mostrar()" value="mostrar mis deportes">
+  </form>
+</body>
+
+</html>
