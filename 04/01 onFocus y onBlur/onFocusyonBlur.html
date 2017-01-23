@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>onFocus y onBlur</title>
+</head>
+<body>
+  <script type="text/javascript">
+    function borrar(parametro) {
+      parametro.value="";
+    }
+    function verificar(parametro) {
+      if (parametro.value.length<7) {
+        alert('La clave debe tener minimo siete caracteres');
+      }
+    }
+  </script>
+  <form>
+    <input type="text" id="nombre" onFocus="borrar(this)" value="Ingrese su nombre">
+    <br>
+    <input type="text" id="clave" onFocus="borrar(this)" onBlur="verificar(this)" value="Ingrese su clave">
+    <br>
+    <input type="button" value="verificar">
+  </form>
+</body>
+</html>

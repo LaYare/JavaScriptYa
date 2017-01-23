@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>onMouseOver y onMouseOut</title>
+</head>
+<body>
+  <script type="text/javascript">
+  function pintar(tabla,color) {
+    tabla.bgColor=color;
+  }
+  </script>
+  <table>
+    <tr>
+      <td onMouseOver="pintar(this,'#ff3349')" onMouseOut="pintar(this,'#ffffff')" style="padding:30px; border: 1px solid black;">
+        <a href="www.gmail.com">GMAIL</a>
+      </td>
+      <td onMouseOver="pintar(this,'#338aff')" onMouseOut="pintar(this,'#ffffff')" style="padding:30px; border: 1px solid black;">
+        <a href="www.hotmail.com">HOTMAIL</a>
+      </td>
+      <td onMouseOver="pintar(this,'#8033ff')" onMouseOut="pintar(this,'#ffffff')" style="padding:30px; border: 1px solid black;">
+        <a href="www.yahoo.com">YAHOO</a>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
